@@ -1,5 +1,6 @@
-﻿
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal
 
 
 namespace Infraestructure.Persistence
@@ -11,6 +12,7 @@ namespace Infraestructure.Persistence
         }
 
         //public DbSet<Product> Products { get; set; }
+        public DbSet<Roll> Rolls { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
